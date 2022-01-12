@@ -24,7 +24,7 @@ png('summer_winter_colony_losses.png', width = 4000, height = 2000, res = 300)
 
 Colony_imputed %>% mutate(colony_index = ifelse(year == 2015, loss, 0)) %>%
   group_by(season) %>%
-  mutate(colony_change = (1-(loss/max(colony_index)))) %>%
+  mutate(colony_change = ((loss/max(colony_index)))) %>%
   ggplot(aes(x = year, y = colony_change, color = season, label = season),fontface='bold') + 
            geom_line(size =1)  + geom_text(aes(x = 2021.2, y = ifelse(year==2021,colony_change,NA))) + 
   scale_color_brewer(type = 'qual', palette = 'Dark2', direction = -1) +
@@ -32,7 +32,7 @@ Colony_imputed %>% mutate(colony_index = ifelse(year == 2015, loss, 0)) %>%
   annotate(label =c('Losses~bold(increase)~by~time~"for"~"both,"','~summer~and~winter...', '...but~losses~changes~are~higher~"for"','bold(summer)~than~winter.'), geom = 'text', x = c(2015.5,2015.27,2020, 2019.82), y = c(0.15, 0.14,0.30,0.29),parse = TRUE,
            size =4)+
   labs(title = 'Summer is getting more harmful for bee colonies',
-       subtitle = 'Colonies loss changes over the time',
+       subtitle = 'Colonies loss changes over time',
        y = '% Colonies loss increment') + 
   theme(plot.title = element_text(size = 20, face = "bold"),
         plot.subtitle = element_text(size = 14),
