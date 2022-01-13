@@ -2,6 +2,7 @@ library(tidytuesdayR)
 library(tidyverse)
 library(mice)
 library(lubridate)
+library(geomtextpath)
 
 # Getting the data
 Colonies <- tt_load("2022-01-11")
