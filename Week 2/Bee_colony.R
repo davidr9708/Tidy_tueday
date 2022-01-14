@@ -33,7 +33,6 @@ Colony_imputed %>%
                                          'Colonies renovated' = 'colony_reno_pct')) %>%
   ggplot(aes(y = pct, x = date_complete, color = pct_type)) +
   ## Geoms
-  geom_point(alpha = 0.02, size = 2) +
   geom_textsmooth(aes(label = pct_type, colour = pct_type),
                     method = "loess", formula = y ~ x, size = 5, linetype = 3, 
                     fontface = 2, linewidth = 1.5) + 
