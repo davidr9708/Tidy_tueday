@@ -43,13 +43,13 @@ Last_vaccine_rate %>% ggplot(aes(x   = people_fully_vaccinated_per_hundred,
   annotate(label = c(paste0('"',Perc_low_vaccination, '%"'),'bold(countries)', 'have~bold(less~than~"80%")', 'people~fully~vaccinated'), 
            geom  = 'text', 
            color = 'darkred',
-           x     = c(35, 46.9,49.9, 51), 
+           x     = c(34.5, 46.2, 49.2, 50.2), 
            y     = c(0.75, 0.8,0.755, 0.71),  
            size  = c(18,7,5.5, 5.5), 
            parse = TRUE) +
   
   labs(title    = 'WE STILL HAVE A LONG WAY TO GO',
-       subtitle = '% Fully vaccinated people in world countries - Jan 14/2021',
+       subtitle = '% Fully vaccinated people in the world countries - Jan 14/2021',
        x        = '% Fully Vaccinated People',
        caption  = "\nSource: Mathieu, E., Ritchie, H., Ortiz-Ospina, E. et al. A global database of COVID-19 vaccinations. Nat Hum Behav (2021).\nDaniel Rodriguez | @davidr9708") + 
   
