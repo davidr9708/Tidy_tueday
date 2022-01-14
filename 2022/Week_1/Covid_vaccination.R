@@ -49,7 +49,7 @@ Last_vaccine_rate %>% ggplot(aes(x   = people_fully_vaccinated_per_hundred,
            parse = TRUE) +
   
   labs(title    = 'WE STILL HAVE A LONG WAY TO GO',
-       subtitle = '% Fully vaccinated people in the world countries - Jan 14/2021',
+       subtitle = '% Fully vaccinated people (Covid-19) in the world countries - Jan 14/2021',
        x        = '% Fully Vaccinated People',
        caption  = "\nSource: Mathieu, E., Ritchie, H., Ortiz-Ospina, E. et al. A global database of COVID-19 vaccinations. Nat Hum Behav (2021).\nDaniel Rodriguez | @davidr9708") + 
   
