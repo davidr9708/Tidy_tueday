@@ -1,14 +1,17 @@
-Chocolate ratings
+Chocolate Ratings
 ================
 ![](Chocolates.png)<!-- -->
 
-### Summary
+### Highlights
+========================================================================================
 **Libraries:** `tidytuesdayR` `tidyverse` `boot` `showtext`
 
 **Plot’s main message:** Using beans from the same country or a different one doesn’t make a
 *relevant* difference in the chocolate rating.
 
+**Statistical tools:** Bootstrapping
 
+========================================================================================
 ### 1. Getting the data
 
 The data come from [Flavors of
@@ -56,7 +59,9 @@ different_country  <- Chocolate %>%
 *PD: I only took the `rating` column because it was the only one that I
 was going to need.*
 
-### Bootstrapping
+### 3. Bootstrapping
+
+*PD: To get the confidence intervals, I decided to use bootstrapping because I guess the two groups might not be completely independent.*
 
 First, I defined the `mean` function to use for bootstrapping:
 
@@ -113,7 +118,7 @@ same_ci      <- boot.ci(same_boot, type ="basic")
     ## 95%   ( 3.078,  3.177 )  
     ## Calculations and Intervals on Original Scale
 
-### Plotting
+### 4. Plotting
 
 I already have the data needed to plot, now I have to put it together
 into a data frame.
