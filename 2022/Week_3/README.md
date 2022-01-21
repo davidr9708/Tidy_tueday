@@ -1,5 +1,6 @@
-Chocolates
+Chocolate ratings
 ================
+![](Chocolates.png)<!-- -->
 
 ### Plot’s main message
 
@@ -200,4 +201,4 @@ ci_boot %>%
         margin           = margin(t = 15, b = 5)))
 ```
 
-![](a_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
+![](Chocolates.png)<!-- -->
