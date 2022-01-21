@@ -1,4 +1,4 @@
-<image src = "2022/Week_3/Chocolate.png">
+<image src = "Chocolates.png">
 
 ### Plot's main message
 Using beans from the same country or a different one doesn't make a **relevant** difference in the chocolate rating.
