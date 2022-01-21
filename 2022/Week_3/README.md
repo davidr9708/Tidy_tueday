@@ -55,11 +55,11 @@ different_country  <- Chocolate %>%
     ## 1   3.25
     ## 2   3.5 
     ## 3   3.75
-========================================================================================
+=========================================================================================
 *PD: I only took the `rating` column because it was the only one that I
 was going to need.*
 
-========================================================================================
+=========================================================================================
 ### 3. Bootstrapping
 
 *PD: To get the confidence intervals, I decided to use bootstrapping because I guess the two groups might not be completely independent.*
@@ -132,11 +132,11 @@ low    <- round(c(different_ci$basic[,4], same_ci$basic[,4]),2)
 high   <- round(c(different_ci$basic[,5], same_ci$basic[,5]), 2)
 ci_boot <- data.frame(mean_, low, high, manufacturer)
 ```
-========================================================================================
+=========================================================================================
 *PD: The factors in `manufacturer` used `\n` to make easier the
 plotting.*
 
-========================================================================================
+=========================================================================================
 I needed to get some fonts for the graph.
 
 ``` r
