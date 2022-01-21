@@ -2,12 +2,14 @@ Chocolate ratings
 ================
 ![](Chocolates.png)<!-- -->
 
-### Plot’s main message
+### Summary
+**Libraries:** `tidytuesdayR` `tidyverse` `boot` `showtext`
 
-Using beans from the same country or a different one doesn’t make a
-**relevant** difference in the chocolate rating.
+**Plot’s main message:** Using beans from the same country or a different one doesn’t make a
+*relevant* difference in the chocolate rating.
 
-### Getting the data
+
+### 1. Getting the data
 
 The data come from [Flavors of
 Cacao](http://flavorsofcacao.com/chocolate_database.html). It was taken
@@ -18,7 +20,7 @@ library(tidytuesdayR)
 Chocolate <- tt_load("2022-01-18")[[1]]
 ```
 
-### Wrangling
+### 2. Wrangling
 
 To build the **bootstrapped** confidence intervals, I need to create two
 data frames, one with the `rating` of the chocolates where the bean was
@@ -51,7 +53,7 @@ different_country  <- Chocolate %>%
     ## 2   3.5 
     ## 3   3.75
 
-*Pd: I only took the `rating` column because it was the only one that I
+*PD: I only took the `rating` column because it was the only one that I
 was going to need.*
 
 ### Bootstrapping
