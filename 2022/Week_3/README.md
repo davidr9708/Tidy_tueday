@@ -56,6 +56,7 @@ different_country  <- Chocolate %>%
     ## 2   3.5 
     ## 3   3.75
 =========================================================================================
+
 *PD: I only took the `rating` column because it was the only one that I
 was going to need.*
 
@@ -133,10 +134,12 @@ high   <- round(c(different_ci$basic[,5], same_ci$basic[,5]), 2)
 ci_boot <- data.frame(mean_, low, high, manufacturer)
 ```
 =========================================================================================
+
 *PD: The factors in `manufacturer` used `\n` to make easier the
 plotting.*
 
 =========================================================================================
+
 I needed to get some fonts for the graph.
 
 ``` r
