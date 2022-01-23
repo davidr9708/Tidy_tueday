@@ -1,7 +1,7 @@
 Bee colonies
 ================
 
-![](Chocolates.png)<!-- -->
+![](summer_winter_colony_losses.png)<!-- -->
 
 ### Highlights
 
@@ -115,4 +115,4 @@ Colony_imputed %>%
         panel.background = element_blank())
 ```
 
-![](a_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+![](summer_winter_colony_losses.png)<!-- -->
