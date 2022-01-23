@@ -8,20 +8,12 @@ library(patchwork)
 Chocolate <- tt_load("2022-01-18")[[1]]
 
 # Wrangling the data
-Chocolate1 <- Chocolate %>%
-  mutate(Same_country = ifelse(company_location == country_of_bean_origin, 'Yes', 'No'))
-
-font_add_google("Karla", "karla")
-font_add_google("Lobster", "lobster")
-showtext_auto()
-
-## Choc
-same <- Chocolate1 %>% 
-  filter(Same_country == 'Yes') %>%
+same_country <- Chocolate %>% 
+  filter(company_location == country_of_bean_origin) %>%
   select(rating)
 
-different <- Chocolate1 %>% 
-  filter(Same_country == 'No') %>%
+different_country  <- Chocolate %>% 
+  filter(company_location != country_of_bean_origin) %>%
   select(rating)
   
 # Bootstrapping
@@ -45,6 +37,12 @@ high   <- round(c(different_ci$basic[,5], same_ci$basic[,5]), 2)
 ci_boot <- data.frame(mean_, low, high, manufacturer)
 
 # Plotting
+## Fonts
+font_add_google("Karla", "karla")
+font_add_google("Lobster", "lobster")
+showtext_auto()
+
+## Saving
 png('Chocolates.png', width = 1300, height = 700, res = 100,units = 'px')
 
 ggplot(ci_boot, aes(x = mean_, y = 1, fill = manufacturer, label = manufacturer,
