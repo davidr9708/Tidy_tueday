@@ -13,7 +13,7 @@ Games_merged <- merge(details, ratings, by = 'id')
 
 
 png('Board_games.png', width = 1300, height = 700, res = 100,units = 'px')
-Games_merged %>% filter(maxplayers < 10) %>%
+Games_merged %>%
   ggplot(aes(y = average, x = playingtime)) +
   scale_x_log10() +
   geom_smooth(colour = 'yellow')  +
@@ -21,13 +21,14 @@ Games_merged %>% filter(maxplayers < 10) %>%
   annotate(geom = 'text',
            label = c('"Usually,"~bold(quick~games)',
                      '~have~a~bold(not~bad)~"score..."', 
-             '"...it"~looks~like~people~bold(enjoy~more)~the',
-             '~games~with~a~~bold(longer~duration...)',
-             '"...maybe"~longer~games~let~you',
-             '~~~~bold(interact~better~with~others...)',
-             '"...or"~bold(be~more~engaged)~"in"~the~game.'),
-           y = c(6.2, 6, 7.1,6.9, 8, 7.8 , 8.6), 
-           x = c(2,2, 40,40, 500,500, 5000), color = 'darkgray',
+                     '"...it"~looks~like~people~bold(enjoy~more)~the',
+                     '~games~with~a~~bold(longer~duration...)',
+                     '"...maybe"~longer~games~let~you',
+                     '~~~~bold(interact~better~with~others...)',
+                     '...but~bold(too~long)~games',
+                     '~~might~start~to~bold(bore.)'),
+           y = c(6.2, 6, 7.1,6.9, 8.1, 7.9 , 8.6, 8.4), 
+           x = c(2,2, 40,40, 500,500, 10000, 10000), color = 'darkgray',
            parse = TRUE, size = 4) +
   labs(title = "MORE time to enjoy board games!",
        subtitle = "AVERAGE RATING vs log(PLAYING TIME)",
