@@ -1,5 +1,7 @@
 # Tidy tuesdays (2022)
 Plots for #tidytuesday in 2022
+## [Week 4: Board Games](https://github.com/davidr9708/Tidy_tueday/tree/main/2022/Week_4)
+<image src = "Week_4/Board_games.png">
 ## [Week 3: Chocolate Ratings](https://github.com/davidr9708/Tidy_tueday/tree/main/2022/Week_3)
 <image src = "Week_3/Chocolates.png">
   
