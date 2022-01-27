@@ -3,7 +3,7 @@ library(tidyverse)
 library(showtext)
 
 # Getting the data
-Games <- tt_load('2022-01-25')
+Games   <- tt_load('2022-01-25')
 details <- Games[[1]]
 ratings <- Games[[2]]
 
