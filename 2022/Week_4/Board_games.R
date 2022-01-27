@@ -47,7 +47,7 @@ Games_merged %>%
   ## Labels
   labs(title    = "MORE time to enjoy board games!",
        subtitle = "AVERAGE RATING vs log(PLAYING TIME)",
-       caption  = "Data: Board Games Geek | Kaggle\nVisualization: Daniel Rodriguez | @davidr9708"
+       caption  = "Data: Board Games Geek | Kaggle\nVisualization: Daniel Rodriguez | @davidr9708",
        x        = "log(playing Time)",
        y        = "Average Rating 1/10") +
   ## Additional features
