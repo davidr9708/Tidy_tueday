@@ -21,7 +21,7 @@ png('Board_games.png', width = 1300, height = 700, res = 100,units = 'px')
 
 Games_merged %>%
   ggplot(aes(y = average, 
-             x = playingtime)) 
+             x = playingtime))    +
   geom_smooth(colour = 'yellow')  +
   
   ## Scales
