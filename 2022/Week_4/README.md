@@ -1,18 +1,18 @@
 BOARD GAMES
 ================
-
+![](Board_games.png)<!-- -->
 ### Highlights
 
 ========================================================================================
 **Libraries:** `tidytuesdayR` `tidyverse` `showtext`
 
-**Plot’s main message:** Longer games are more *enjoylable* but too long
+**Plot’s main message:** Longer games are more **enjoylable** but too long games
 might start to bore.
 
-**Statistical tools:** Bootstrapping
+**Statistical tools:** Smoothing
 
 ========================================================================================
-![](Board_games.png)<!-- -->
+
 ### 1. Getting the data
 
 The data come from
