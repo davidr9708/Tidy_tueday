@@ -12,6 +12,7 @@ might start to bore.
 **Statistical tools:** Bootstrapping
 
 ========================================================================================
+![](Board_games.png)<!-- -->
 ### 1. Getting the data
 
 The data come from
@@ -94,4 +95,4 @@ geom_smooth(colour = 'yellow')  +
         axis.ticks.y     = element_blank())
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
+![](Board_games.png)<!-- -->
