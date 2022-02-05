@@ -2,7 +2,7 @@
 Plots for #tidytuesday in 2022
 
 ## [Week 5: Dog Breeds](https://github.com/davidr9708/Tidy_tueday/tree/main/2022/Week_5)
-<image src = "2022/Week_5/Dog_Breeds.png">
+<image src = "Week_5/Dog_Breeds.png">
   
 ## [Week 4: Board Games](https://github.com/davidr9708/Tidy_tueday/tree/main/2022/Week_4)
 <image src = "Week_4/Board_games.png">
