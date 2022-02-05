@@ -85,7 +85,8 @@ breeds_to_plot %>%
  # No 2-9 images
   geom_image(aes(x, y, image = Image), size = c(0.2,0.4,0.2), asp = 1.2)  +
   labs(title = 'Medium coat lenght are\n the MOST UNPOPULAR',
-          subtitle = 'Likelihood to be a bad rated breed') +
+          subtitle = 'Likelihood to be a bad rated breed',
+       caption  = "Data: American Kennel Club\nVisualization: Daniel Rodriguez | @davidr9708") +
   coord_fixed(xlim = c(0, 10), ylim = c(0, 5), expand = FALSE, clip = "off") +
   annotate(geom = 'text', 
            x = x_labels, 
@@ -96,9 +97,9 @@ breeds_to_plot %>%
 theme(panel.background = element_blank(),
         panel.grid       = element_blank(),
         plot.background  = element_blank(),
-        plot.caption     = element_text(),                   
-          plot.title       = element_text(size = 60, face = 'bold', family ='Bangers'),
+        plot.title       = element_text(size = 60, face = 'bold', family ='Bangers'),
         plot.subtitle    = element_text(size = 25, face = 'italic',family ='Bangers', hjust = 0.02),
+        plot.caption     = element_text(color = "darkgray", size = 10, hjust = 0.94,  margin = margin(t = 15, b = 5)),  
         axis.title.x     = element_blank(),
         axis.text.x      = element_blank(),
         axis.ticks.x     = element_blank(),
