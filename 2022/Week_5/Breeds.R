@@ -1,6 +1,11 @@
-
+library(tidyverse)
+library(camcorder)
+library(ggimage)
+library(magick)
+library(ggtext)
+library(grid)
 library(showtext)
-library()
+
 font_import()
 font_add_google(name = "Lobster")
 font_add_google(name = "Bangers")
@@ -57,15 +62,15 @@ breed_length <- c(Long_coat_Low_rank[1], Medium_coat_Low_rank[1], Short_coat_Low
   Medium_percent <- paste0('"', breeds_to_plot$percent[breeds_to_plot$coat_length == 'Medium'],'%"')
   ## General
   dog_coats <- c('~~"for"~dog','breeds~with')
-  dog_lengh <- c('bold(SHORT~COATS)', 'bold(MEDIUM~COATS)', 'bold(LONG~COATS)')
+  dog_lengh <- c('bold(LONG~COATS)', 'bold(MEDIUM~COATS)','bold(SHORT~COATS)')
 
   ## All
   text_lables <- c(Long_percent, Medium_percent, Short_percent, 
                    rep(dog_coats,3), dog_lengh)
 
-  x_percent <- c(4.7, 5.2, 4.7)
-  x_general <- c(5.4, 5.6, 6.7,7, 5.4, 5.6)
-  x_breed   <- c(5.1, 6, 5.1)
+  x_percent <- c(4.8, 5.2, 4.8)
+  x_general <- c(5.5, 5.7, 6.7,7, 5.5, 5.7)
+  x_breed   <- c(5.2, 6, 5.2)
 
 
   y_percent <- c(1, 2.8, 4)
@@ -78,13 +83,13 @@ breed_length <- c(Long_coat_Low_rank[1], Medium_coat_Low_rank[1], Short_coat_Low
   y_labels <- c(y_percent, y_general,y_breed)
   
   
-  png('Dog_Breeds.png', width = 1100, height = 800, res = 100,units = 'px')  
+png('Dog_Breeds.png', width = 1100, height = 800, res = 100,units = 'px')  
   # Plot
 breeds_to_plot %>%
   ggplot(.) +
  # No 2-9 images
   geom_image(aes(x, y, image = Image), size = c(0.2,0.4,0.2), asp = 1.2)  +
-  labs(title = 'Medium coat lenght are\n the MOST UNPOPULAR',
+  labs(title = 'Medium coat length are\n the MOST UNPOPULAR',
           subtitle = 'Likelihood to be a bad rated breed',
        caption  = "Data: American Kennel Club\nVisualization: Daniel Rodriguez | @davidr9708") +
   coord_fixed(xlim = c(0, 10), ylim = c(0, 5), expand = FALSE, clip = "off") +
