@@ -2,7 +2,7 @@
 Plots for #tidytuesday
 
 ## [Week 6: Tuskegee Airmen Challenge](https://github.com/davidr9708/Tidy_tueday/tree/main/2022/Week_6)
-<image src = "2022/Week_5/Airmen.png">
+<image src = "2022/Week_6/Airmen.png">
 
 ## [Week 5: Dog Breeds](https://github.com/davidr9708/Tidy_tueday/tree/main/2022/Week_5)
 <image src = "2022/Week_5/Dog_Breeds.png">
