@@ -1,5 +1,7 @@
 # Tidy_tuesdays
-The following plots focus more on ***storytelling*** rather than fashion.
+The following plots focus more on ***storytelling*** rather than fashion. 
+
+On the other hand, you can see how I've improved my plotting skills.
 
 ## [Week 15: Air pollution](https://github.com/davidr9708/Tidy_tueday/tree/main/2022/Week_15)
 <image src = "2022/Week_15/air_pollution.png">
