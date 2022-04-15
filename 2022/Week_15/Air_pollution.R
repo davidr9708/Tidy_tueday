@@ -22,15 +22,16 @@ getmode <- function(v) {
 Data <- inner_join(death_source, fuel_gdp, 
                    by = c('Entity', "Year")) %>% 
   group_by(Entity) %>%
-  mutate(Continent = getmode(Continent)) %>% filter(!is.na(Continent)) %>%
+  mutate(Continent = getmode(Continent)) %>% 
+  filter(!is.na(Continent)) %>%
   rename(Risk   = `Deaths - Cause: All causes - Risk: Household air pollution from solid fuels - Sex: Both - Age: Age-standardized (Rate)`,
          Access = `Access to clean fuels and technologies for cooking (% of population)`,
          GDP    = `GDP per capita, PPP (constant 2017 international $)`)
 
 ## Correlation's values
 cor_Access_risk <- round(cor(Data$Access, Data$Risk, use = 'complete.obs'),2)
-cor_Access_GDP <- round(cor(Data$Access, Data$GDP, use = 'complete.obs'),2)
-cor_GDP_risk <- round(cor(Data$GDP, Data$Risk, use = 'complete.obs'), 2)
+cor_Access_GDP  <- round(cor(Data$Access, Data$GDP, use = 'complete.obs'),2)
+cor_GDP_risk    <- round(cor(Data$GDP, Data$Risk, use = 'complete.obs'), 2)
 
 # Plotting
 ## Fonts
