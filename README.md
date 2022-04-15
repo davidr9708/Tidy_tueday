@@ -1,6 +1,9 @@
 # Tidy_tuesdays
 Plots for #tidytuesday
 
+## [Week 15: Air pollution](https://github.com/davidr9708/Tidy_tueday/tree/main/2022/Week_15)
+<image src = "2022/Week_15/air_pollution.png">
+
 ## [Week 6: Tuskegee Airmen Challenge](https://github.com/davidr9708/Tidy_tueday/tree/main/2022/Week_6)
 <image src = "2022/Week_6/Airmen.png">
 
