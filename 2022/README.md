@@ -1,6 +1,9 @@
 # Tidy tuesdays (2022)
 Plots for #tidytuesday in 2022
 
+## [Week 6: Airmen](https://github.com/davidr9708/Tidy_tueday/tree/main/2022/Week_6)
+<image src = "Week_6/Airmen.png">
+
 ## [Week 5: Dog Breeds](https://github.com/davidr9708/Tidy_tueday/tree/main/2022/Week_5)
 <image src = "Week_5/Dog_Breeds.png">
   
