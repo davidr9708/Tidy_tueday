@@ -66,7 +66,7 @@ source('3_Model_1.R'
        )
 ```
 
-We can see that `Income Index` and `dddd` doesn't meet the **linearity assumption**, then we'll remove them.
+We can see that `Income Index` and `Employment Index` doesn't meet the **linearity assumption**, then we'll remove them.
 
 ### 3.2 Second model
 ```{r model2, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE}

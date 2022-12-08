@@ -172,8 +172,8 @@ weren’t met.
     ## #   Area_Deprivation_index_education <dbl>,
     ## #   Area_Deprivation_index_services <dbl>, .fitted <dbl>, .resid <dbl>, …
 
-We can see that `Income Index` and `dddd` doesn’t meet the **linearity
-assumption**, then we’ll remove them.
+We can see that `Income Index` and `Employment Index` doesn’t meet the
+**linearity assumption**, then we’ll remove them.
 
 ### 3.2 Second model
 
