@@ -66,48 +66,6 @@ factors were labelled as others. In continuous variables, I chose the
 variables that might show a different behaviour for each level of the
 factor `Size` (the criteria was a visual inspection).
 
-    ## 
-    ##  Downloading file 1 of 1: `museums.csv`
-
-    ##  [1] "museum_id"                             
-    ##  [2] "Name_of_museum"                        
-    ##  [3] "Address_line_1"                        
-    ##  [4] "Address_line_2"                        
-    ##  [5] "Village,_Town_or_City"                 
-    ##  [6] "Postcode"                              
-    ##  [7] "Latitude"                              
-    ##  [8] "Longitude"                             
-    ##  [9] "Nothing"                               
-    ## [10] "Country"                               
-    ## [11] "Accreditation"                         
-    ## [12] "Governance"                            
-    ## [13] "Size"                                  
-    ## [14] "Size_provenance"                       
-    ## [15] "Subject"                               
-    ## [16] "low_opening"                           
-    ## [17] "high_opening"                          
-    ## [18] "low_closing"                           
-    ## [19] "high_closing"                          
-    ## [20] "DOMUS_Subject_Matter"                  
-    ## [21] "DOMUS_identifier"                      
-    ## [22] "Primary_provenance_of_data"            
-    ## [23] "Identifier_used_in_primary_data_source"
-    ## [24] "Area_Deprivation_index"                
-    ## [25] "Area_Deprivation_index_crime"          
-    ## [26] "Area_Deprivation_index_education"      
-    ## [27] "Area_Deprivation_index_employment"     
-    ## [28] "Area_Deprivation_index_health"         
-    ## [29] "Area_Deprivation_index_housing"        
-    ## [30] "Area_Deprivation_index_income"         
-    ## [31] "Area_Deprivation_index_services"       
-    ## [32] "Area_Geodemographic_group"             
-    ## [33] "Area_Geodemographic_group_code"        
-    ## [34] "Area_Geodemographic_subgroup"          
-    ## [35] "Area_Geodemographic_subgroup_code"     
-    ## [36] "Area_Geodemographic_supergroup"        
-    ## [37] "Area_Geodemographic_supergroup_code"   
-    ## [38] "Notes"
-
 ## 3. Building the model
 
 Before observing any coefficient or p-value, it’s important to verify

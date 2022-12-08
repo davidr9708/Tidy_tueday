@@ -56,12 +56,6 @@ exploratory_data <- raw_data %>%
 ## 3. Exploring the data
 For the first model, I chose only the factors' levels that might which proportions of `Small size` and `Other sizes` were significantly different to the population's proportions, and the other levels of that factors were labelled as others. In continuous variables, I chose the variables that might show a different behaviour for each level of the factor `Size` (the criteria was a visual inspection).
 
-```{r Exploration, ,echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE}
-source('2_Exploration.R'
-       )
-
-```
-
 ## 3. Building the model
 Before observing any coefficient or p-value, it's important to verify the logistic regression assumptions, that's why I didn't pay attention to any p-value (even if they were significant) if the the assumptions weren't met.
 
