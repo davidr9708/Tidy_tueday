@@ -3,7 +3,7 @@ The following plots focus more on ***storytelling*** rather than fashion.
 
 On the other hand, you can see how I've **improved my plotting skills**.
 
-## [Museum](https://github.com/davidr9708/Tidy_tueday/tree/main/2022/Museums)
+## [Museums](https://github.com/davidr9708/Tidy_tueday/tree/main/2022/Museums)
 <image src = "2022/Museums/Museums_factors_plot.png">
 
 ## [Air pollution](https://github.com/davidr9708/Tidy_tueday/tree/main/2022/Week_15)
