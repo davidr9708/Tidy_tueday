@@ -361,6 +361,6 @@ size** and **NOT small size**.
 ## 6. Conclusions
 
 `Unknown governance` and subjects about `Utilities` or `Services` are
-the factors that show the greatest association with the small size, I
+the factors that show the greatest association with the small size, I recommend a 
 further research on these factors might show us the root causes of small
 size and lead new decisions to increase visits in England’s museums.
